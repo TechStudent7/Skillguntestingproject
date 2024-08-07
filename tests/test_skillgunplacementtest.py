@@ -7,15 +7,15 @@ driver = webdriver.Chrome()
 def test_skillgun_login():
     driver.get("http://www.skillgun.com")
     mobile = driver.find_element('id', 'ContentPlaceHolder1_tbPhoneNumber')  # finding the webelement through id locator
-    mobile.send_keys('9791639460')  # giving automation test case to give mobile number
+    mobile.send_keys('your number here')  # giving automation test case to give mobile number
     time.sleep(5)  # 5seconds to load the keys and entered values
     # to check email
     email = driver.find_element('id', 'ContentPlaceHolder1_tbEmail')  # same as mobile
-    email.send_keys('bhaseerath7866@gmail.com')
+    email.send_keys('your mailID here')
     time.sleep(5)
     # to check password
     password = driver.find_element('id', 'ContentPlaceHolder1_tbPassword')  # same as mobile and email
-    password.send_keys('bhasee@pilot#7866')
+    password.send_keys('your password here')
     time.sleep(5)
     # to tick checkbox
     checkbox = driver.find_element('id', 'ckbkPolicyAgreement')  # now we need  to tick the checkbox
